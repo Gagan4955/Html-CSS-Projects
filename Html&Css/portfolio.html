@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #09042b;
+            color: aliceblue;
+            font-family: sans-serif;
+            /* flex-wrap: wrap;
+            flex-basis: auto; */
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: #1c173f;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 24px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        nav ul li a:hover{
+            color: rgb(113, 112, 112);
+            font-size: 17px;
+        }
+        .left{
+            font-size:30px;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 100px;
+        }
+        .leftSection{
+            margin: 70px 50px;
+            margin-left: 100px;
+            margin-top: 150px;
+            width: 60%;
+            font-size: 50px;
+            letter-spacing: 0.10px;
+            line-height: 70px;
+
+        }
+        .rightSection img{
+            width: 40%;
+            margin: 50px 30px;
+            margin-left: 450px;
+
+        }
+        .purple{
+            color: purple;
+        }
+        hr{
+            border-color: rgb(214, 157, 214);
+            margin: 200px 150px;
+            height: 0.01px;
+        
+        }
+        span h1{
+            font-size: 100px;
+            font-weight: 600;
+            text-align: center;
+            margin-top: -180px;
+            margin-left: 150px;
+            color: transparent;
+            -webkit-text-stroke: 1px white;
+            background:url('https://wallpapertag.com/wallpaper/full/f/3/e/143777-gorgerous-black-and-white-striped-background-1920x1200.jpg');
+            -webkit-background-clip: text;
+            background-position: 100% 0; 
+            animation: back 20s linear infinite;
+
+        }
+        @keyframes back{
+            100%{
+                background-position: 200px;
+            }
+        }
+        @media(max-width:900px){
+            body{
+                color: blue;
+                background-color: #04030c;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <!-- <nav>
+            <div class="left">My Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact Me</a></li>
+                </ul>
+                
+            
+            </div>
+
+        </nav> -->
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <!-- Hi, My Name is <span class="purple">Gagan</span>
+                <div>and I am a Passionate</div> -->
+                <!-- <div class="purple">WebDeveloper</div> -->
+                <span><h1>E-DEMOCRACY</h1></span>
+            </div>
+            <div class="rightSection">
+                <!-- <img src="file:///C:/Users/ASUS/Downloads/developer.png.png" alt=""> -->
+            </div>
+        </section>
+    </main>
+    <!-- <hr> -->
+    <!-- <script>
+        var type = new Type('#element',{
+            Strings:["Web Designer","WebDeveloper","Graphic Designer","vedio Editor"],
+            typeSpeed:50,
+
+        });
+    </script> -->
+</body>
+</html>

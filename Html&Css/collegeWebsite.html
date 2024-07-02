@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>college website template</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 1300px;
+            margin: 0px auto;
+        }
+        .header{
+            background-color: rgb(233, 132, 17);
+            padding: 6px;
+        }
+        .header b{
+            color: rgb(154, 5, 5);
+            background-color: aliceblue;
+            padding: 10px;
+            font-size: 20px;
+            
+        }
+        .header marquee{
+            color: aliceblue;
+            font-size: 20px;
+            width: 80%;
+        }
+        .logo{
+            height: 60px;
+        }
+        nav ul{
+            float: right;
+            padding: 20px 0p;
+            margin-top: -30px;
+            margin-right: -100px;
+        }
+        nav ul a{
+            text-decoration: none;
+            font-size: 20px;
+            padding: 4px 18px;
+            font-weight: 500;
+            color: rgb(100, 11, 11);
+            /* box-shadow: 0px 0px 5px black; */
+            border-radius: 10px;
+            
+        }
+        nav ul a:hover{
+            background-color: rgb(69, 165, 135);
+            transition: all 0.5s ease-in-out;
+            border-radius: 10px;
+            
+        }
+        .slider img{
+            width: 100%;
+            height: 70vh;
+            margin-top: 10px;
+        }
+        .slider h1{
+            text-align: center;
+            margin-top: -19%;
+            color: aliceblue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 70px;
+        }
+        .main-section{
+            width: 100%;
+            padding: 70px 0px;
+            float: left;
+            background-color: rgb(242, 239, 235);
+        }
+        .main-section{
+            display: flex;
+            justify-content: center;
+        }
+        .heading{
+            font-size: 28px;
+            font-weight: 500;
+            border-bottom: 1px solid black;
+            margin-bottom: 20px;
+            color: rgb(3, 57, 57);
+        }
+        .event{
+            width: 23%;
+            float: left;
+            padding: 10px;
+            margin: 2%;
+            background:linear-gradient(280deg,rgb(238, 226, 226),rgb(198, 198, 234));
+        }
+        .event .heading{
+            background-color:rgb(229, 116, 135);
+            padding: 5px;
+            text-align: center;
+        }
+        .event ul li{
+            float: left;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .About-us{
+            width: 100%;
+            height: 700px;
+            display: flex;
+            padding: 30px 70px;
+        }
+        .text{
+            width: 50%;
+            padding: 20px;
+        }
+        .text h2{
+            color: rgb(6, 84, 84);
+            font-size: 50px;
+            border-bottom: 1px solid rgb(3, 102, 102);
+        }
+        .text h4{
+            color: rgb(4, 113, 77);
+            font-size: 35px;
+            padding: 15px 0px;
+        }
+        .text p{
+            font-size: 20px;
+            color: rgb(6, 84, 84);
+            padding: 10px 0px;
+
+        }
+        .images{
+            padding: 10px;
+            display: grid;
+            grid-template-columns:1fr 1fr ;
+            gap: 10px;
+        }
+        #pic{
+            height: 300px;
+            width: 330px;
+        }
+        .Awards{
+            width: 100%;
+            padding: 70px 0px;
+            background-color: rgb(253, 229, 229);
+            display: flex;
+            justify-content: center;
+        }
+        #certificate{
+            width: 404px;
+            height: 400px;
+        }
+        #photo{
+            height: 300px;
+            width: 330px;
+        }
+
+        .Gallary{
+            width: 100%;
+            padding: 70px;
+            background-color: rgb(240, 240, 240);
+        }
+        .Gallary .gallary-container{
+            justify-content: center;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr;
+            gap: 10px;
+
+        }
+        .txt{
+            color: rgb(6, 84, 84);
+            font-size: 50px;
+            border-bottom: 1px solid rgb(3, 102, 102);
+        }
+
+        .placement-container{
+            width: 100%;
+            height: 310px;
+            background-color: rgb(250, 241, 229);
+            padding: 10px 70px;
+
+        }
+        .companie-list{
+            display: flex;
+            padding: 10px;
+            padding: 70px;
+        }
+        .placement-container .companie-list .list{
+            text-decoration: none;
+            font-size: 33px;
+            border: 2px solid rgb(118, 6, 6);
+            padding: 10px 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+            
+        }
+        .footer{
+            display: flex;
+            width: 100%;
+            height: 500px;
+            background-color: rgb(49, 93, 78);
+            padding: 70px;
+        } 
+        .footer-logo{
+            height: 260px;
+            width: 200px;
+            margin-left: 400px;
+        }
+        .subject{
+            height:400px;
+            width: 400px;
+            margin-left: 150px;
+            font-size: 20px;
+            color: aliceblue;
+            line-height: 34px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <b>NEWS:</b>
+            <marquee behavior="" direction="">My College: saint philomena college darbe putturu DK</marquee>
+        </div>
+    </div>
+    <div class="container">
+        <img class="logo" src="file:///D:/project%20images/Reading_College_Logo.png" alt="logo">
+        <nav>
+            <ul>
+                <a href="#">Home</a>
+                <a href="#About-us">About</a>
+                <a href="#NoticeBoard">NoticeBoard</a>
+                <a href="#Event">Event</a>
+                <a href="#Gallary">Gallery</a>
+                <a href="#">Blogs</a>
+                <a href="#">Contact Us</a>
+            </ul>
+        </nav>
+    </div>
+    <div class="slider" style="height: 70vh;">
+        <img src="file:///C:/Users/ASUS/Downloads/hercules-hall-surrounded-by-greenery-sunlight-daytime-munich-germany.jpg" alt="slider">
+        <h1>WELCOME TO OUR COLLEGE</h1>
+    </div>
+
+    <div class="main-section" id="Event">
+            <div class="event">
+                <h2 class="heading">Campus News</h2>
+                
+                <marquee  direction="up" style="height: 340px;">
+                <ul>
+                    <li><i>01-Jan-2004</i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt</li>   
+                    <li><i>01-Jan-2004</i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt</li>   
+                    <li><i>01-Jan-2004</i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt</li>   
+                    <li><i>01-Jan-2004</i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt</li>   
+                    <li><i>01-Jan-2004</i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt</li>   
+                    <li><i>01-Jan-2004</i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt</li>   
+                    <li><i>01-Jan-2004</i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt</li>   
+                </ul>
+
+            </marquee>
+        </div>
+
+        <div class="event">
+            <h2 class="heading">Campus News</h2>  
+            <marquee  direction="up" style="height: 340px;">
+            <ul>
+                <li><i>01-Jan-2004</i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt</li>   
+                <li><i>01-Jan-2004</i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt</li>   
+                <li><i>01-Jan-2004</i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt</li>   
+                <li><i>01-Jan-2004</i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt</li>   
+                <li><i>01-Jan-2004</i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt</li>   
+                <li><i>01-Jan-2004</i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt</li>   
+                <li><i>01-Jan-2004</i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt</li>   
+            </ul>
+
+        </marquee>
+    </div>
+
+    <div class="event">
+        <h2 class="heading">Campus News</h2> 
+        <marquee  direction="up" style="height: 340px;">
+        <ul>
+            <li><i>01-Jan-2004</i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt</li>   
+            <li><i>01-Jan-2004</i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt</li>   
+            <li><i>01-Jan-2004</i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt</li>   
+            <li><i>01-Jan-2004</i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt</li>   
+            <li><i>01-Jan-2004</i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt</li>   
+            <li><i>01-Jan-2004</i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt</li>   
+            <li><i>01-Jan-2004</i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt</li>   
+        </ul>
+
+    </marquee>
+    </div>
+    </div>
+
+        <div class="About-us" id="About-us">
+            <div class="text">
+                <h2>About My BEST COLLEGE</h2>
+                <h4>A Unique College</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Ea, odio iste! Impedit modi illo eligendi a fugiat quae, 
+                    minus iste? Nostrum dolorum temporibus voluptates, tempore
+                    dolore cum sapiente nam quidem!Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Ea, odio iste! Impedit modi illo eligendi a fugiat quae, 
+                    minus iste? Nostrum dolorum temporibus voluptates, tempore
+                    dolore cum sapiente nam quidem!Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Ea, odio iste! Impedit modi illo eligendi a fugiat quae, 
+                    minus iste? Nostrum dolorum temporibus voluptates, tempore
+                    dolore cum sapiente nam quidem!Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Ea, odio iste! Impedit modi illo eligendi a fugiat quae, 
+                    minus iste? Nostrum dolorum temporibus voluptates, tempore
+                    dolore cum sapiente nam quidem!Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Ea, odio iste! Impedit modi illo eligendi a fugiat quae, 
+                    minus iste? Nostrum dolorum temporibus voluptates, tempore
+                    dolore cum sapiente nam quidem!Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Ea, odio iste! Impedit modi illo eligendi a fugiat quae, 
+                    minus iste? Nostrum dolorum temporibus voluptates, tempore
+                    dolore cum sapiente nam quidem!
+                </p>
+            </div>
+
+            <div class="images">
+            <img id="pic" src="file:///C:/Users/ASUS/Downloads/D430_50_073_1200.jpg" alt="picture">
+            <img id="pic"src="file:///C:/Users/ASUS/Downloads/AdobeStock_284468940_Preview.jpeg" alt="">
+            <img id="pic" src="file:///C:/Users/ASUS/Downloads/AdobeStock_324413175_Preview.jpeg" alt="">
+            <img  id="pic"src="file:///C:/Users/ASUS/Downloads/AdobeStock_324413175_Preview.jpeg" alt="">
+            </div>
+        </div>
+
+        <div class="Awards" id="NoticeBoard" >
+                <div class="event">
+                    <h2 class="heading">College Info</h2>
+                    <div>
+                        <h3>Our COLLEGE</h3>
+                        <p><b>Principal :</b>Antony Prakash Monthero</p>
+                        <p><b>Addres :</b>Philonagar,Darbe </p>
+                        <p><b>City :</b>Puttur</p>
+                        <p><b>Email Id :</b>philos55@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <h2 class="heading">Awards</h2>
+                    <div>
+                        <img id="certificate" src="file:///C:/Users/ASUS/Downloads/banner_04_awards_day.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="event">
+                    <h2 class="heading">Certificate</h2>
+                    <div >
+                        <img id="certificate" src="file:///C:/Users/ASUS/Downloads/banner_04_awards_day.jpg"alt="">
+                    </div>
+                </div>
+        </div>
+
+        <div class="Gallary" id="Gallary" >
+            <h2 class="txt">Our GALLARY</h2>
+            <div class="gallary-container">
+                <img id="photo" src="file:///C:/Users/ASUS/Downloads/D430_50_073_1200.jpg" alt="picture">
+                <img id="photo"src="file:///C:/Users/ASUS/Downloads/AdobeStock_284468940_Preview.jpeg" alt="">
+                <img id="photo" src="file:///C:/Users/ASUS/Downloads/AdobeStock_324413175_Preview.jpeg" alt="">
+                <img  id="photo"src="file:///C:/Users/ASUS/Downloads/AdobeStock_324413175_Preview.jpeg" alt="">
+                <img id="photo" src="file:///C:/Users/ASUS/Downloads/banner_04_awards_day.jpg"alt="">
+                <img id="photo" src="file:///C:/Users/ASUS/Downloads/hercules-hall-surrounded-by-greenery-sunlight-daytime-munich-germany.jpg" alt="slider">
+                <img id="photo" src="file:///C:/Users/ASUS/Downloads/D430_50_073_1200.jpg" alt="picture">
+                <img id="photo"src="file:///C:/Users/ASUS/Downloads/AdobeStock_284468940_Preview.jpeg" alt="">
+                <img id="photo" src="file:///C:/Users/ASUS/Downloads/AdobeStock_324413175_Preview.jpeg" alt="">
+                <img  id="photo"src="file:///C:/Users/ASUS/Downloads/AdobeStock_324413175_Preview.jpeg" alt="">
+                <img id="photo" src="file:///C:/Users/ASUS/Downloads/banner_04_awards_day.jpg"alt="">
+                <img id="photo" src="file:///C:/Users/ASUS/Downloads/hercules-hall-surrounded-by-greenery-sunlight-daytime-munich-germany.jpg" alt="slider">
+                
+            </div>
+        </div>
+
+        <div class="placement-container">
+            <h2 class="txt">Placement</h2>
+            <marquee class="" behavior="" direction="left" scrollamount="10">
+                <nav class="companie-list">
+                    <p class="list">IBM</p>
+                    <p class="list">TCS</p>
+                    <p class="list">INFOSYS</p>
+                    <p class="list">WIPRO</p>
+                    <p class="list">COGNIZANT</p>
+                    <p class="list">MPHASIS</p>
+                    <p class="list">HONEYWELL</p>
+                    <p class="list">AMAZON</p>
+                    <p class="list">GOOGLE</p>
+
+                </nav>
+            </marquee>
+        </div>
+
+        <div class="footer">
+            <div class="footer-container">
+                <img class="footer-logo" src="file:///C:/Users/ASUS/Downloads/developer.png.png" alt="">
+            </div>
+            <div class="subject">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Odit eveniet fugiat autem deleniti nemo doloremque at modi, 
+                blanditiis ullam ex nesciunt illo culpa tempore mollitia porro fugit
+                quos? Ab, blanditiis.
+
+            </div>
+        </div>
+
+</body>
+</html>

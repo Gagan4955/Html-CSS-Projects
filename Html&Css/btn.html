@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buttons</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body{
+        background-color: rgb(106, 68, 68);
+    }
+    
+    .primary-btn,
+.secondary-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin: 20px;
+  transition: background-color 0.3s;
+}
+
+.primary-btn {
+  background-color: #cddae8;
+  color: #1a1818;
+  height: 100px;
+  width: 120px;
+  box-shadow:10px 10px 10px 10px rgb(50, 48, 48);
+}
+
+.secondary-btn {
+  background-color: #f0f0f0;
+  color: #141212;
+  margin-left: 10px;
+  height: 100px;
+  width: 120px;
+  box-shadow:10px 10px 10px 10px rgb(50, 48, 48);
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+  background-color: rgba(0, 123, 255, 0.8);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 280px;
+    margin-left: 750px;
+    height: 350px;
+    width: 400px;
+    box-shadow:10px 10px 10px 10px black;
+    background-color: #f3f2f0;
+}
+
+  </style>
+</head>
+<body>
+<div class="container">
+  <button class="primary-btn">Voter</button>
+  <button class="secondary-btn">Booth Officer </button>
+</div>
+</body>
+</html>

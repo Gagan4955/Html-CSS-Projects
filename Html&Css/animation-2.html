@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        .container{
+            width: 30%;
+            height: 400px;
+            position: relative;
+            margin: 10% auto ;
+            background: linear-gradient(0deg, rgb(4, 4, 4),rgb(57, 56, 56));
+        }
+        .container::before, .container::after{
+            content: '';
+            left: -2px;
+            top: -2px;
+            position: absolute;
+            background: linear-gradient(45deg, orange,green,blue,pink,skyblue,yellow);
+            background-size: 400%;
+            width: calc(100% + 5px);
+            height: calc(100% + 5px);
+            z-index: -1;
+            animation: glow 20s linear infinite ;
+        }
+        @keyframes glow{
+            0%{
+                background-position: 0 0;
+            }
+            50%{
+                background-position: 400% 0;
+            }
+            100%{
+                background-position: 0 0;
+            }
+        }
+        .container::after{
+            filter: blur(20px);
+        }
+        .Login{
+            color: rgb(179, 213, 241);
+            text-align: center;
+        }
+        div .fill input{
+            height: 30px;
+            width: 400px;
+            padding: 10px;
+            margin: 30px;
+        
+        }
+        div .btn button{
+            height: 30px;
+            width: 150px;
+            margin: 10%;
+
+            margin-left: 35%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="Login"><h1>Login</h1></div>
+        <div class="fill">
+            <input type="email" placeholder="Enter your email" id="">
+        </div>
+        <div class="fill">
+            <input type="password" placeholder="Enter your password" id="">
+        </div>
+        <div class="btn">
+            <button>Login</button>
+        </div>
+
+    </div>
+</body>
+</html>

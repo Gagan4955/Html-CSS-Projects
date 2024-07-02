@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #09042b;
+            color: aliceblue;
+            font-family: sans-serif;
+            /* flex-wrap: wrap;
+            flex-basis: auto; */
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: #1c173f;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 24px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        nav ul li a:hover{
+            color: rgb(113, 112, 112);
+            font-size: 17px;
+        }
+        .left{
+            font-size:30px;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 100px;
+        }
+        .leftSection{
+            margin: 70px 50px;
+            margin-left: 100px;
+            margin-top: 150px;
+            width: 60%;
+            font-size: 50px;
+            letter-spacing: 0.10px;
+            line-height: 70px;
+
+        }
+        .rightSection img{
+            width: 40%;
+            margin: 50px 30px;
+            margin-left: 450px;
+
+        }
+        .purple{
+            color: purple;
+        }
+        hr{
+            border-color: rgb(214, 157, 214);
+            margin: 200px 150px;
+            height: 0.01px;
+        
+        }
+        span h1{
+            font-size: 100px;
+            font-weight: 600;
+            text-align: center;
+            margin-top: -180px;
+            margin-left: 150px;
+            color: transparent;
+            -webkit-text-stroke: 1px white;
+            background:url('https://wallpapertag.com/wallpaper/full/f/3/e/143777-gorgerous-black-and-white-striped-background-1920x1200.jpg');
+            -webkit-background-clip: text;
+            background-position: 100% 0; 
+            animation: back 20s linear infinite;
+
+        }
+        @keyframes back{
+            100%{
+                background-position: 200px;
+            }
+        }
+        @media(max-width:900px){
+            body{
+                color: blue;
+                background-color: #04030c;
+            }
+        }
+      body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+}
+
+fieldset:not(:last-of-type) {
+  border-bottom: 3px solid #3b3b4f;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+a {
+  color: #dfdfe2;
+}
+  </style>
+  <body>
+      <img src="C:\Users\asus\OneDrive\Pictures\Saved Pictures\ShreeRam.jpeg" alt="hii">
+    <h1>Registration Form</h1>
+    <h2><p>E-DEMOCRACY</P></h2>
+    <p>"Revolutionizing Voting Systems with Electronic Balloting"</p>
+    <form action='otp.php'>
+      <fieldset>
+        <label>Enter Your First Name: <input type="text" name="first-name" required /></label>
+        <label>Enter Your Last Name: <input type="text" name="last-name" required /></label>
+        <label>Enter Your Email: <input type="email" name="email" required /></label>
+        <label>Enter Your Password: <input type="password" name="password"  required /></label>
+      </fieldset>
+      
+        <input type="submit" value="GET OTP" >
+    </form>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <!-- Hi, My Name is <span class="purple">Gagan</span>
+                <div>and I am a Passionate</div> -->
+                <!-- <div class="purple">WebDeveloper</div> -->
+                <span><h1>E-DEMOCRACY</h1></span>
+            </div>
+            <div class="rightSection">
+                <!-- <img src="file:///C:/Users/ASUS/Downloads/developer.png.png" alt=""> -->
+            </div>
+        </section>
+    </main>
+    
+  </body>
+</html>

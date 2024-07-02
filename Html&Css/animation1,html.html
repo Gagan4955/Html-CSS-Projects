@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(11, 2, 39);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .box{
+            position: relative;
+            width: 300px;
+            height: 400px;
+            background-color:black ;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            filter: blur();
+            
+            
+
+        }
+        .box::after{
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background-image: conic-gradient(transparent,transparent,transparent,rgb(229, 39, 181));
+            animation: back 4s linear infinite;
+            animation-delay: -2s;
+            
+        }
+        .box::before{
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background-image: conic-gradient(transparent,transparent,transparent,rgb(39, 112, 229));
+            animation: back 4s linear infinite;
+            
+        }
+        @keyframes back{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .box span{
+            position: absolute;
+            inset: 5px;
+            border-radius: 16px;
+            background-color: black;
+            z-index: 1;
+        }
+        .box span h1{
+            
+            z-index: 2;
+            color: aliceblue;
+            display: flex;
+            
+            align-items: center;
+            justify-content: center;
+            
+
+        }
+        h1{
+            font-size: 7rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span><h1>01</h1></span>
+    </div>
+</body>
+</html>
